@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница, посвящённая автомобилю Ford Galaxy 2.3">
+    <title>Ford Galaxy 2.3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="flex-container">
+    <div class="logo">Логотип</div>
+    <h1>Ford Galaxy 2.3</h1>
+    <button class="hamburger">☰</button>
+    <nav class="nav-menu">
+        <ul class="flex-container">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Характеристики</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+    <button onclick="showCurrentTime()">Показать текущее время</button>
+</header>
+
+    <main class="content flex-container">
+        <section class="text-block">
+            <p><strong>Ford Galaxy 2.3</strong> — это практичный и надёжный автомобиль с просторным салоном и мощным двигателем.</p>
+            <p>Особенности модели:</p>
+            <ul>
+                <li><em>Мощность двигателя:</em> 146 л.с.</li>
+                <li><u>Тип двигателя:</u> Бензиновый, DOHC</li>
+                <li><s>Кузов:</s> Минивэн</li>
+            </ul>
+        </section>
+
+        <section class="image-block">
+            <img src="galaxy.jpg" alt="Ford Galaxy 2.3">
+        </section>
+
+        <section class="audio-video-block flex-container">
+            <div>
+                <h2>Звук двигателя Ford Galaxy</h2>
+                <audio controls>
+                    <source src="engine-sound.mp4" type="audio/mpeg">
+                </audio>
+            </div>
+            <div>
+                <h2>Ford Galaxy 2.3 - Видеоролик</h2>
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section class="specs-block">
+            <h2>Характеристики</h2>
+            <table>
+                <tr>
+                    <th>Параметр</th>
+                    <th colspan="2">Значение</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Двигатель</td>
+                    <td>Тип</td>
+                    <td>DOHC</td>
+                </tr>
+                <tr>
+                    <td>Объем</td>
+                    <td>2.3 л</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <section class="video-block flex-container">
+    <div class="video">
+        <h2>Opel Astra</h2>
+        <video controls>
+            <source src="opel.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video">
+        <h2>Видео 2</h2>
+        <video controls>
+            <source src="emae.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<section class="image-block">
+    <h2>Фотография</h2>
+    <img src="astra.jpg" alt="Дополнительное изображение">
+</section>
+<div class="wrapper">
+    <!-- Форма заявки -->
+    <div class="promotion-form">
+        <h2>Заявка на продвижение сайта</h2>
+
+        <label for="site-url">Ваш сайт:</label>
+        <input type="url" id="site-url" name="site-url" placeholder="https://example.com" required>
+
+        <fieldset>
+            <legend>Интересуемые услуги:</legend>
+            <label><input type="checkbox" name="service" value="seo"> Продвижение сайта</label>
+            <label><input type="checkbox" name="service" value="ads"> Контекстная реклама</label>
+            <label><input type="checkbox" name="service" value="development"> Создание сайтов</label>
+            <label><input type="checkbox" name="service" value="analytics"> Веб-аналитика</label>
+            <label><input type="checkbox" name="service" value="social"> Продвижение в соцсетях</label>
+            <label><input type="checkbox" name="service" value="media"> Медийная реклама</label>
+        </fieldset>
+
+        <label for="budget">Бюджет/месяц:</label>
+        <input type="number" id="budget" name="budget" placeholder="30 000 рублей" required>
+
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите имя" required>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+
+        <button type="submit">Отправить</button>
+    </div>
+
+    <!-- Блок рекламы -->
+    <div class="ad-block">
+        <div class="product-image">
+            <img src="шампунь.jpg" alt="Шампунь-крем «Lilea» кефирный">
+        </div>
+        <h3>Шампунь-крем «Lilea» кефирный, 500 мл</h3>
+        <p class="price">3,15 р.</p>
+        <div class="rating">⭐⭐⭐⭐ <span>(3)</span></div>
+        <p>Беларусь</p>
+        <div class="delivery">
+            <p>🚚 Доставка завтра</p>
+            <p>📍 Самовывоз завтра</p>
+        </div>
+        <button class="add-to-cart">🛒 В корзину</button>
+    </div>
+</div>
+    <footer class="flex-container">
+        <p>&copy; 2025 Ford Galaxy</p>
+        <nav>
+            <ul class="flex-container">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Связь</a></li>
+            </ul>
+        </nav>
+        <address>support@ford.ru</address>
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Закрываем меню при клике на ссылку
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    });
+</script>
+<script src="zadania.js"></script>
+</body>
+</html>

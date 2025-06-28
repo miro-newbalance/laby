@@ -1,0 +1,94 @@
+    /* Общие стили */
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центрирование по горизонтали */
+        justify-content: center; /* Центрирование по вертикали */
+        min-height: 100vh;
+        text-align: center;
+    }
+
+    /* Контейнер контента */
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        max-width: 900px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Шапка */
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Подвал */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Аудио-видео блок */
+    .audio-video-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Таблица характеристик */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        border: 1px solid white;
+    }
+
+    th {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    /* Блок видео */
+    .video-block {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Блок изображения */
+    .image-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
