@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Занковский Мирослав Геннадьевич — Задания</title>
+  <link rel="stylesheet" href="style9.css" />
+</head>
+<body>
+
+  <!-- Задание 1 -->
+  <section>
+    <div id="fio">Занковский Мирослав Геннадьевич</div>
+    <img src="Galaxy.jpg" alt="Фотография" width="300" />
+  </section>
+
+  <!-- Задание 2 -->
+  <section>
+    <p id="doc-title-output"></p>
+  </section>
+
+  <!-- Задание 3 -->
+  <section>
+    <button id="style-button">Оформить ФИО</button>
+  </section>
+
+  <!-- Задание 4 -->
+  <section>
+    <p>Информация о системе будет показана в новом окне (однократно при загрузке).</p>
+  </section>
+
+  <!-- Задание 5: Форма -->
+  <section class="wrapper">
+    <div class="promotion-form">
+      <h2>Заявка на продвижение сайта</h2>
+
+      <form id="promotion-form">
+        <label for="site-url">Ваш сайт:</label>
+        <input type="url" id="site-url" name="site-url" placeholder="https://example.com" required>
+
+        <fieldset>
+          <legend>Интересуемые услуги:</legend>
+          <label><input type="checkbox" name="service" value="seo"> Продвижение сайта</label>
+          <label><input type="checkbox" name="service" value="ads"> Контекстная реклама</label>
+          <label><input type="checkbox" name="service" value="development"> Создание сайтов</label>
+          <label><input type="checkbox" name="service" value="analytics"> Веб-аналитика</label>
+          <label><input type="checkbox" name="service" value="social"> Продвижение в соцсетях</label>
+          <label><input type="checkbox" name="service" value="media"> Медийная реклама</label>
+        </fieldset>
+
+        <label for="budget">Бюджет/месяц:</label>
+        <input type="number" id="budget" name="budget" placeholder="30 000 рублей" required>
+
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите имя" required>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Подключаем скрипты -->
+  <script src="script1.js"></script>
+  <script src="script2.js"></script>
+  <script src="script3.js"></script>
+  <script src="script4.js"></script>
+  <script src="script5-validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма заявки</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- Форма заявки -->
+    <div class="promotion-form">
+        <h2>Заявка на продвижение сайта</h2>
+
+        <label for="site-url">Ваш сайт:</label>
+        <input type="url" id="site-url" name="site-url" placeholder="https://example.com" required>
+
+        <fieldset>
+            <legend>Интересуемые услуги:</legend>
+            <label><input type="checkbox" name="service" value="seo"> Продвижение сайта</label>
+            <label><input type="checkbox" name="service" value="ads"> Контекстная реклама</label>
+            <label><input type="checkbox" name="service" value="development"> Создание сайтов</label>
+            <label><input type="checkbox" name="service" value="analytics"> Веб-аналитика</label>
+            <label><input type="checkbox" name="service" value="social"> Продвижение в соцсетях</label>
+            <label><input type="checkbox" name="service" value="media"> Медийная реклама</label>
+        </fieldset>
+
+        <label for="budget">Бюджет/месяц:</label>
+        <input type="number" id="budget" name="budget" placeholder="30 000 рублей" required>
+
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите имя" required>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+
+        <button type="submit">Отправить</button>
+    </div>
+
+    <!-- Блок рекламы -->
+    <div class="ad-block">
+        <div class="product-image">
+            <img src="шампунь.jpg" alt="Шампунь-крем «Lilea» кефирный">
+        </div>
+        <h3>Шампунь-крем «Lilea» кефирный, 500 мл</h3>
+        <p class="price">3,15 р.</p>
+        <div class="rating">⭐⭐⭐⭐ <span>(3)</span></div>
+        <p>Беларусь</p>
+        <div class="delivery">
+            <p>🚚 Доставка завтра</p>
+            <p>📍 Самовывоз завтра</p>
+        </div>
+        <button class="add-to-cart">🛒 В корзину</button>
+    </div>
+</div>
+
+</body>
+</html>

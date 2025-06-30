@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница, посвящённая автомобилю Ford Galaxy 2.3">
+    <title>Ford Galaxy 2.3</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в мир Ford Galaxy 2.3</h1>
+    </header>
+    <div class="content">
+        <p><strong>Ford Galaxy 2.3</strong> — это практичный и надёжный автомобиль с просторным салоном и мощным двигателем.</p>
+        <p>Особенности модели:</p>
+        <ul>
+            <li><em>Мощность двигателя:</em> 146 л.с.</li>
+            <li><u>Тип двигателя:</u> Бензиновый, DOHC</li>
+            <li><s>Кузов:</s> Минивэн</li>
+        </ul>
+
+        <img src="galaxy.jpg" alt="Ford Galaxy 2.3">
+
+        <h2>Звук двигателя Ford Galaxy</h2>
+        <audio controls>
+            <source src="engine-sound.mp4" type="audio/mpeg">
+        </audio>
+
+        <h2>Характеристики</h2>
+        <table style="border: 2px solid black; border-collapse: collapse;">
+            <tr>
+                <th style="border: 1px solid black;">Параметр</th>
+                <th style="border: 1px solid black;" colspan="2">Значение</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" rowspan="2">Двигатель</td>
+                <td style="border: 1px solid black;">Тип</td>
+                <td style="border: 1px solid black;">DOHC</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Объем</td>
+                <td style="border: 1px solid black;">2.3 л</td>
+            </tr>
+        </table>
+        
+
+        <div class="form-container">
+            <h2>Свяжитесь с нами</h2>
+            <form action="#">
+                <label for="name">Имя:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                
+                <label for="email">Электронная почта:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="car-model">Модель автомобиля:</label><br>
+                <select id="car-model" name="car-model">
+                    <option value="galaxy">Ford Galaxy</option>
+                    <option value="focus">Ford Focus</option>
+                    <option value="mustang">Ford Mustang</option>
+                </select><br><br>
+                
+                <label>Вы заинтересованы:</label><br>
+                <input type="radio" id="buy" name="interest" value="buy">
+                <label for="buy">Купить</label><br>
+                <input type="radio" id="rent" name="interest" value="rent">
+                <label for="rent">Взять в аренду</label><br><br>
+                
+                <label for="message">Сообщение:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить</button>
+            </form>
+        </div>
+
+        <h2>Ссылки</h2>
+        <ul>
+            <li><a href="https://www.ford.ru" target="_blank">Официальный сайт Ford</a></li>
+            <li><a href="engine.html">Технические характеристики мотора</a></li> <!-- Ссылка на вторую страницу -->
+        </ul>
+
+        <h2>Ford Galaxy 2.3 - Видеоролик</h2>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <p>&copy; &reg; &trade; &#8364; &#9742; &#9993; &#9733; &lt; &gt; &laquo; &raquo;</p>
+    </div>  
+</body>
+</html>
